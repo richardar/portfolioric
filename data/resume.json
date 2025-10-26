@@ -1,0 +1,78 @@
+{
+  "name": "Richard Anthuvan Rosario",
+  "email": "gratusri@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/richardar",
+  "github": "https://github.com/richardar",
+  "summary": "Full Stack & ML Engineer who builds end-to-end products - from React frontends and Django backends to production ML models. Experienced in shipping scalable systems, real-time pipelines, and data-driven applications.",
+  "education": [
+    {"institution":"University of Nottingham","degree":"MSc Computer Science - Artificial Intelligence","period":"Sep 2024 – Sep 2025","note":"Expecting First Class"},
+    {"institution":"Anna University","degree":"BEng Computer Science and Engineering","period":"Dec 2020 – May 2024","note":"First Class"}
+  ],
+
+  "experience": [
+    {
+      "role":"Founding Full Stack Engineer",
+      "org":"Siddons Yeates and Sharples Ltd",
+      "location":"Nottingham, United Kingdom",
+      "period":"Sept. 2024 – Present",
+      "bullets":[
+        "Architected and delivered a compliance automation platform aligning business outcomes with scalable cloud infrastructure.",
+        "Enhanced operational efficiency by 45% through automated document validation and workflow optimization.",
+        "Led system improvements across backend, frontend, and CI/CD, enabling 5-minute Docker rollouts.",
+        "Mentored engineers on full-stack practices, fostering cross-team capability growth."
+      ]
+    },
+    {
+      "role":"Software and Data Engineer",
+      "org":"Anteam AI (Internship) ",
+      "location":"Nottingham, United Kingdom",
+      "period":"Jun. 2025 – Sep. 2025",
+      "bullets":[
+        "Delivered a real-time Route Analysis Platform improving internal performance by 35%.",
+        "Engineered Python microservices and optimized geospatial pipelines (10M+ records/month) for spatial analytics.",
+        "Reduced query latency by 60% via optimized similarity search and caching.",
+        "Integrated React/TypeScript frontend with REST APIs to improve data usability and user experience."
+      ]
+    },
+    {
+      "role":"Machine Learning Engineer (R&D)",
+      "org":"The Reciprocal Solutions",
+      "location":"Coimbatore, India",
+      "period":"Dec. 2023 – Aug. 2024",
+      "bullets":[
+        "Productionized research ML models into containerized AI microservices using FastAPI and Django REST.",
+        "Deployed systems handling 50K+ daily inferences with sub-second response times.",
+        "Automated data pipelines and monitoring, cutting manual intervention by 40%.",
+        "Guided engineers in MLOps, Docker orchestration, and scalable deployment practices."
+      ]
+    },
+    {
+      "role":"Data Scientist",
+      "org":"EC Solutions (Internship)",
+      "location":"Tamil Nadu, India",
+      "period":"Aug. 2021 – Oct. 2023",
+      "bullets":[
+        "Developed predictive analytics and anomaly detection models, improving insight accuracy by 40%.",
+        "Automated ETL and feature pipelines, reducing data prep time by 50%.",
+        "Built dashboards and reports transforming analytical outputs into actionable KPIs.",
+        "Maintained reproducible ML workflows using version control and structured documentation."
+      ]
+    }
+  ],
+  "skills": [
+    {"name":"Python","level":98},
+    {"name":"Machine Learning","level":93},
+    {"name":"PyTorch","level":90},
+    {"name":"scikit-learn","level":88},
+    {"name":"SQL (PostgreSQL)","level":88},
+    {"name":"JavaScript / TypeScript","level":84},
+    {"name":"React","level":82},
+    {"name":"FastAPI / Django","level":85},
+    {"name":"Docker / CI-CD","level":86},
+    {"name":"Data Engineering","level":85},
+    {"name":"Geospatial pipelines","level":80},
+    {"name":"AWS / GCP","level":72}
+  ],
+  "projects": [],
+  "source":"public/resume.pdf"
+}

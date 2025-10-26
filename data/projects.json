@@ -1,0 +1,50 @@
+[
+  {
+    "name": "DSML-Fin",
+    "full_name": "richardar/DSML-Fin",
+    "desc": "Interactive Streamlit app for real-time stock analysis, forecasting, and visualization. Powered by Yahoo Finance, technical indicators, and machine learning models (ARIMA, SARIMA, Random Forest, XGBoost).  Key Features:  Real-time data updates •  Technical indicators (RSI, MACD, Bollinger Bands, etc.) •  Forecasting & ML predictions •",
+    "url": "https://github.com/richardar/DSML-Fin",
+    "language": "Jupyter Notebook",
+    "stars": 1,
+    "forks": 0,
+    "updated_at": "2025-05-22T22:37:12Z",
+    "image": "https://opengraph.githubassets.com/1/richardar/DSML-Fin",
+    "readme_excerpt": "## Stock Analysis Dashboard  A Streamlit-based web application for in-depth stock analysis, forecasting, and visualization. Powered by Yahoo Finance data (`yfinance`), technical indicators (`ta`), statistical models (ARIMA/SARIMA), and machine learning models (Random Forest, XGBoost).  ---  ### 🛠️ Features  * **Real-time Data Refresh**: Fetch up-to-date stock data on demand. * **Custom Date Range"
+  },
+  {
+    "name": "konectapp",
+    "full_name": "richardar/konectapp",
+    "desc": "A web-based platform that connects users with skilled professionals such as mechanics, plumbers, and electricians. Users can post tasks with images and descriptions, while professionals can bid, communicate, and manage work directly through the platform.  Built with Node.js, Express.js, MongoDB, EJS, and Passport.js for authentication.",
+    "url": "https://github.com/richardar/konectapp",
+    "language": "EJS",
+    "stars": 1,
+    "forks": 0,
+    "updated_at": "2023-09-30T15:38:03Z",
+    "image": "https://opengraph.githubassets.com/1/richardar/konectapp",
+    "readme_excerpt": "# Konect App  ## Introduction  The Konect app is a web-based platform designed to connect people with skilled professionals, such as mechanics, plumbers, and electricians. It simplifies the process of finding and hiring professionals for various tasks and services. Users can post images and descriptions of their problems, and professionals can bid on these tasks. This README provides an overview o"
+  },
+  {
+    "name": "Gesture_based_Authentication",
+    "full_name": "richardar/Gesture_based_Authentication",
+    "desc": "A secure, gesture-driven two-factor authentication (2FA) framework combining motion detection, facial verification, and dynamic hand gesture recognition. Built with Python, YOLOv8, ArcFace, RetinaFace, and MediaPipe, it introduces a transformer-based gesture validation module and anti-repetition filtering for robust spoofing resistance.",
+    "url": "https://github.com/richardar/Gesture_based_Authentication",
+    "language": "Python",
+    "stars": 0,
+    "forks": 0,
+    "updated_at": "2025-10-21T18:58:50Z",
+    "image": "https://opengraph.githubassets.com/1/richardar/Gesture_based_Authentication",
+    "readme_excerpt": "# Enhanced Gesture-Based Authentication  ![License](https://img.shields.io/badge/license-MIT-green) ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)  ## ✨ Overview  **Enhanced Gesture-Based Authentication** is a novel, secure, and dynamic two-factor authentication (2FA) system that replaces traditional fingerprint authentication with **gesture-based recognition**. Designed for applicatio"
+  },
+  {
+    "name": "facialAttendence",
+    "full_name": "richardar/facialAttendence",
+    "desc": "A Flask-based REST API for facial recognition tasks including face enrollment, search, similarity matching, and verification. Designed for attendance management and identity verification systems.  Built with Python, Flask, and face recognition libraries for accurate and efficient face detection and comparison.",
+    "url": "https://github.com/richardar/facialAttendence",
+    "language": "Python",
+    "stars": 1,
+    "forks": 0,
+    "updated_at": "2024-07-28T02:14:53Z",
+    "image": "https://opengraph.githubassets.com/1/richardar/facialAttendence",
+    "readme_excerpt": " # Facial Attendance API  Welcome to the Facial Attendance API! This open-source project is designed to provide advanced facial recognition functionalities. Whether you're building a attendance management system or a security application, this API has got you covered.  ## Table of Contents - [Introduction](#introduction) - [Getting Started](#getting-started) - [API Functionality](#api-functionalit"
+  }
+]
