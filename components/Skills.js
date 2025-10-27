@@ -7,16 +7,20 @@ export default function Skills() {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.08 }
+      transition: { staggerChildren: 0.1 }
     }
   }
 
-  const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
+  const nodeVariants = {
+    hidden: { opacity: 0, scale: 0 },
     visible: { 
       opacity: 1, 
-      x: 0,
-      transition: { duration: 0.4 }
+      scale: 1,
+      transition: { 
+        type: "spring",
+        stiffness: 200,
+        damping: 15
+      }
     }
   }
 
@@ -28,31 +32,53 @@ export default function Skills() {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         className="section-title">
-        Technical Skills
+        Skills
       </motion.h2>
+      
       <motion.div 
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="skills-grid">
-        {resume.skills.map((sk, i) => (
-          <motion.div 
-            key={i} 
-            variants={itemVariants}
-            whileHover={{ scale: 1.02 }}
-            className="skill-item">
-            <div className="skill-name">{sk.name}</div>
-            <div className="skill-bar">
-              <motion.div 
-                initial={{ width: 0 }}
-                whileInView={{ width: `${sk.level}%` }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: i * 0.05, ease: "easeOut" }}
-                className="skill-level" />
-            </div>
-          </motion.div>
-        ))}
+        className="neural-network">
+
+        {/* Skill nodes */}
+        <div className="skill-nodes">
+          {resume.skills.map((sk, i) => (
+            <motion.div 
+              key={i} 
+              variants={nodeVariants}
+              whileHover={{ 
+                scale: 1.15,
+                transition: { duration: 0.6 }
+              }}
+              className="skill-node"
+            >
+              <div className="node-core">
+                <div className="node-ring"></div>
+                <div className="node-ring ring-2"></div>
+                <div className="node-center">
+                  <span className="skill-name">{sk.name}</span>
+                  <div className="skill-percentage">{sk.level}%</div>
+                </div>
+                <div className="node-pulse"></div>
+              </div>
+              
+              {/* Activation bars */}
+              <div className="activation-bars">
+                {[...Array(5)].map((_, idx) => (
+                  <motion.div 
+                    key={idx}
+                    className={`activation-bar ${idx < Math.ceil(sk.level / 20) ? 'active' : ''}`}
+                    initial={{ scaleY: 0 }}
+                    whileInView={{ scaleY: 1 }}
+                    transition={{ delay: i * 0.1 + idx * 0.05, duration: 0.3 }}
+                  />
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
     </section>
   )

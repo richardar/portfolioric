@@ -4,11 +4,11 @@
     "full_name": "richardar/DSML-Fin",
     "desc": "Interactive Streamlit app for real-time stock analysis, forecasting, and visualization. Powered by Yahoo Finance, technical indicators, and machine learning models (ARIMA, SARIMA, Random Forest, XGBoost).  Key Features:  Real-time data updates •  Technical indicators (RSI, MACD, Bollinger Bands, etc.) •  Forecasting & ML predictions •",
     "url": "https://github.com/richardar/DSML-Fin",
-    "language": "Jupyter Notebook",
-    "stars": 1,
+    "language": "Pandas, Machine-Learning",
+
     "forks": 0,
     "updated_at": "2025-05-22T22:37:12Z",
-    "image": "https://opengraph.githubassets.com/1/richardar/DSML-Fin",
+    "image": "https://private-user-images.githubusercontent.com/78464961/271781844-a4be1518-19b0-4b90-9fd6-82c642ce91bd.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE1NjE2MDUsIm5iZiI6MTc2MTU2MTMwNSwicGF0aCI6Ii83ODQ2NDk2MS8yNzE3ODE4NDQtYTRiZTE1MTgtMTliMC00YjkwLTlmZDYtODJjNjQyY2U5MWJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDI3VDEwMzUwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTVjY2UyZDdjYzlkODQyMjQ0NTMyMjQzNGNiZWVkY2ViY2RjODJkYzIwMDA3NWJiMGNjNzAwMTQ3YjczNGZkM2EmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.vuRmp2TcGWxPkgo7ha4h5iUGB2RDCsSSUEkcyDXEvds",
     "readme_excerpt": "## Stock Analysis Dashboard  A Streamlit-based web application for in-depth stock analysis, forecasting, and visualization. Powered by Yahoo Finance data (`yfinance`), technical indicators (`ta`), statistical models (ARIMA/SARIMA), and machine learning models (Random Forest, XGBoost).  ---  ### 🛠️ Features  * **Real-time Data Refresh**: Fetch up-to-date stock data on demand. * **Custom Date Range"
   },
   {
@@ -16,12 +16,12 @@
     "full_name": "richardar/konectapp",
     "desc": "A web-based platform that connects users with skilled professionals such as mechanics, plumbers, and electricians. Users can post tasks with images and descriptions, while professionals can bid, communicate, and manage work directly through the platform.  Built with Node.js, Express.js, MongoDB, EJS, and Passport.js for authentication.",
     "url": "https://github.com/richardar/konectapp",
-    "language": "EJS",
+    "language": "Node JS, EJS",
     "stars": 1,
     "forks": 0,
     "updated_at": "2023-09-30T15:38:03Z",
     "image": "https://opengraph.githubassets.com/1/richardar/konectapp",
-    "readme_excerpt": "# Konect App  ## Introduction  The Konect app is a web-based platform designed to connect people with skilled professionals, such as mechanics, plumbers, and electricians. It simplifies the process of finding and hiring professionals for various tasks and services. Users can post images and descriptions of their problems, and professionals can bid on these tasks. This README provides an overview o"
+    "readme_excerpt": "# Konect App  ## A Production Grade web-based platform designed to connect people with skilled professionals, such as mechanics, plumbers, and electricians. It simplifies the process of finding and hiring professionals for various tasks and services. Users can post images and descriptions of their problems, and professionals can bid on these tasks. This README provides an overview o"
   },
   {
     "name": "Gesture_based_Authentication",

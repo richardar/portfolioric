@@ -8,7 +8,7 @@ export default function Experience() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
+        staggerChildren: 0.15
       }
     }
   }
@@ -16,17 +16,16 @@ export default function Experience() {
   const cardVariants = {
     hidden: { 
       opacity: 0, 
-      rotateY: 90,
-      scale: 0.8
+      y: 50,
+      scale: 0.9
     },
     visible: { 
       opacity: 1, 
-      rotateY: 0,
+      y: 0,
       scale: 1,
       transition: { 
-        duration: 0.8,
-        type: "spring",
-        bounce: 0.4
+        duration: 0.6,
+        ease: [0.175, 0.885, 0.32, 1.275]
       }
     }
   }
@@ -37,21 +36,13 @@ export default function Experience() {
       opacity: 1,
       x: 0,
       transition: {
-        delay: i * 0.1,
-        duration: 0.5
+        delay: i * 0.08,
+        duration: 0.4
       }
     })
   }
 
-  const getGradient = (index) => {
-    const gradients = [
-      'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-      'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-      'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
-    ];
-    return gradients[index % gradients.length];
-  }
+  const iconEmojis = ['💼', '🚀', '🔬', '📊'];
 
   return (
     <section id="experience" className="section">
@@ -61,7 +52,7 @@ export default function Experience() {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
         className="section-title">
-        Experience
+        Experience Timeline
       </motion.h2>
       <motion.div 
         className="experience-grid"
@@ -75,20 +66,19 @@ export default function Experience() {
             key={i} 
             variants={cardVariants}
             whileHover={{ 
-              scale: 1.03,
-              rotateY: 5,
+              y: -8,
               transition: { duration: 0.3 }
             }}
             className="experience-card"
-            style={{ 
-              transformStyle: 'preserve-3d',
-              perspective: '1000px'
-            }}
           >
-            <div 
-              className="experience-card-gradient" 
-              style={{ background: getGradient(i) }}
-            />
+            {/* Icon Badge */}
+            <div className="exp-icon-badge">
+              {iconEmojis[i % iconEmojis.length]}
+            </div>
+
+            {/* Side Accent */}
+            <div className="exp-side-accent"></div>
+
             <div className="experience-card-content">
               <motion.div 
                 className="exp-header"
@@ -99,7 +89,10 @@ export default function Experience() {
               >
                 <h3 className="exp-role">{exp.role}</h3>
                 <div className="exp-org">{exp.org}</div>
-                <div className="exp-period">{exp.period}</div>
+                <div className="exp-meta">
+                  <span className="exp-period">📅 {exp.period}</span>
+                  <span className="exp-location">📍 {exp.location}</span>
+                </div>
               </motion.div>
               
               <div className="exp-bullets">
@@ -113,8 +106,8 @@ export default function Experience() {
                     viewport={{ once: true }}
                     className="exp-bullet"
                   >
-                    <span className="bullet-icon">▹</span>
-                    {b}
+                    <span className="bullet-dot"></span>
+                    <span className="bullet-text">{b}</span>
                   </motion.div>
                 ))}
               </div>

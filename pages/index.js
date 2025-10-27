@@ -7,6 +7,7 @@ import Skills from '../components/Skills'
 import Contact from '../components/Contact'
 import AnimatedBackground from '../components/AnimatedBackground'
 import FloatingCode from '../components/FloatingCode'
+import InteractiveEffects from '../components/InteractiveEffects'
 
 export default function Home() {
   return (
@@ -18,12 +19,14 @@ export default function Home() {
       </Head>
       <AnimatedBackground />
       <FloatingCode />
+      <InteractiveEffects />
       <div className="app-bg">
         <Nav />
         <Hero />
         <Projects />
-        <Skills />
         <Experience />
+        <Skills />
+        
         <section id="about" className="section">
           <h2 className="section-title">About Me</h2>
           <div className="about-card">
@@ -36,7 +39,7 @@ export default function Home() {
             <div className="terminal-body">
               <p><span className="prompt">$</span> whoami</p>
               <p style={{marginLeft: '1.5rem', color: 'var(--text-muted)'}}>
-                Hi, I'm <code>Gratus Richard Anthuvan Rosario</code> - a Full Stack & ML Engineer who builds end-to-end products, from React frontends to Django backends to production ML models.
+                Hi, I'm <code>Richard Anthuvan Rosario</code> - a Full Stack & ML Engineer who builds end-to-end products, from React frontends to Django backends to production ML models.
               </p>
               <p style={{marginTop: '1rem'}}><span className="prompt">$</span> cat expertise.txt</p>
               <p style={{marginLeft: '1.5rem', color: 'var(--text-muted)'}}>

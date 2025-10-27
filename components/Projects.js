@@ -8,17 +8,22 @@ export default function Projects() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15
+        staggerChildren: 0.2
       }
     }
   }
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, rotateX: -15, y: 50 },
     visible: { 
       opacity: 1, 
+      rotateX: 0,
       y: 0,
-      transition: { duration: 0.5, ease: "easeOut" }
+      transition: { 
+        duration: 0.8,
+        type: "spring",
+        bounce: 0.3
+      }
     }
   }
 
@@ -37,7 +42,7 @@ export default function Projects() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="projects-grid">
+        className="projects-showcase">
         {projects.map((proj, i) => {
           const imgSrc = `/assets/projects/${proj.name}.png`
           const fallbackSrc = proj.image || `https://opengraph.githubassets.com/1/${proj.url?.split('github.com/')[1]}`
@@ -46,25 +51,84 @@ export default function Projects() {
             <motion.div 
               key={i} 
               variants={itemVariants}
-              whileHover={{ y: -8, transition: { duration: 0.2 } }}
-              className="project-card">
-              <img 
-                className="proj-img" 
-                src={imgSrc} 
-                alt={proj.name}
-                onError={(e) => { e.currentTarget.src = fallbackSrc }} 
-              />
-              <div className="proj-body">
-                <h3>{proj.name}</h3>
-                <p>{proj.desc || proj.readme_excerpt}</p>
-                <div className="tags">
-                  {proj.language && <span className="tag">{proj.language}</span>}
+              whileHover={{ 
+                scale: 1.02,
+                rotateY: 2,
+                transition: { duration: 0.3 }
+              }}
+              className="monitor-container"
+              style={{ 
+                transformStyle: 'preserve-3d',
+                perspective: '1000px'
+              }}
+            >
+              {/* Monitor Frame */}
+              <div className="monitor-frame">
+                <div className="monitor-bezel">
+                  {/* Monitor Header */}
+                  <div className="monitor-header">
+                    <div className="monitor-dots">
+                      <span className="dot" style={{background:'#ef4444'}}/>
+                      <span className="dot" style={{background:'#f59e0b'}}/>
+                      <span className="dot" style={{background:'#10b981'}}/>
+                    </div>
+                    <span className="monitor-title">{proj.name}</span>
+                    <div className="monitor-actions">
+                      <span>━</span>
+                      <span>□</span>
+                      <span>✕</span>
+                    </div>
+                    <div className="power-button" title="Power"></div>
+                  </div>
+
+                  {/* Monitor Screen */}
+                  <div className="monitor-screen">
+                    <div className="screen-content">
+                      <img 
+                        className="project-preview" 
+                        src={imgSrc} 
+                        alt={proj.name}
+                        onError={(e) => { e.currentTarget.src = fallbackSrc }} 
+                      />
+                      <div className="screen-overlay">
+                        <div className="overlay-content">
+                          <h4>{proj.name}</h4>
+                          <p>{proj.desc || proj.readme_excerpt}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Monitor Footer */}
+                  <div className="monitor-footer">
+                    <div className="project-meta">
+                      {proj.language && (
+                        <span className="tech-badge">{proj.language}</span>
+                      )}
+                      {proj.stars && (
+                        <span className="star-count">⭐ {proj.stars}</span>
+                      )}
+                    </div>
+                    <a 
+                      href={proj.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="view-project-btn"
+                    >
+                      View Project →
+                    </a>
+                  </div>
                 </div>
-                <div className="meta">
-                  {proj.stars && <span>★ {proj.stars}</span>}
-                  <a href={proj.url} target="_blank" rel="noopener noreferrer">View Project →</a>
+
+                {/* Monitor Stand */}
+                <div className="monitor-stand">
+                  <div className="stand-neck"></div>
+                  <div className="stand-base"></div>
                 </div>
               </div>
+
+              {/* Glow Effect */}
+              <div className="monitor-glow"></div>
             </motion.div>
           )
         })}
